@@ -1,3 +1,5 @@
+import './assets/libs/bootstrap4/bootstrap-tcl.css'
+import './assets/css/main.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
