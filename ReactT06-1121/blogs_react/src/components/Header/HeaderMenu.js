@@ -4,26 +4,26 @@ function HeaderMenu() {
             {/* Nav */}
             <div className="header-nav">
                 <ul className="header-nav__lists">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li>
-                        <a href="#">Our Team</a>
+                        <a href="/">Our Team</a>
                         <ul>
-                            <li><a href="#">Our Team 1</a></li>
-                            <li><a href="#">Our Team 2</a></li>
-                            <li><a href="#">Our Team 3</a></li>
+                            <li><a href="/">Our Team 1</a></li>
+                            <li><a href="/">Our Team 2</a></li>
+                            <li><a href="/">Our Team 3</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="/">Contact</a>
                         <ul>
-                            <li><a href="#">Contact 1</a></li>
-                            <li><a href="#">Contact 2</a></li>
+                            <li><a href="/">Contact 1</a></li>
+                            <li><a href="/">Contact 2</a></li>
                             <li>
-                                <a href="#">Contact 3</a>
+                                <a href="/">Contact 3</a>
                                 <ul>
-                                    <li><a href="#">Contact 11</a></li>
-                                    <li><a href="#">Contact 12</a></li>
-                                    <li><a href="#">Contact 13</a></li>
+                                    <li><a href="/">Contact 11</a></li>
+                                    <li><a href="/">Contact 12</a></li>
+                                    <li><a href="/">Contact 13</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -36,3 +36,5 @@ function HeaderMenu() {
         </div>
     );
 }
+
+export default HeaderMenu

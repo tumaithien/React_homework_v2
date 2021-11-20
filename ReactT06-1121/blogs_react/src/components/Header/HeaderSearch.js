@@ -14,3 +14,5 @@ function HeaderSearch() {
         </div>
     );
 }
+
+export default HeaderSearch

@@ -9,10 +9,10 @@ function Footer() {
                         {/* Footer Column */}
                         <div className="tcl-col-12 tcl-col-sm-6 tcl-col-md-4 tcl-col-lg-3">
                             <div className="footer-logo">
-                                <img src="assets/images/logo.png" alt="NuxtBlog Logo" />
+                                <img src="/assets/images/logo.png" alt="NuxtBlog Logo" />
                             </div>
                             <p>© 2020, All Rights Reserved.</p>
-                            <p>Created by <a href="https://www.facebook.com/congluc1902" target="_blank">Luctc</a></p>
+                            <p>Created by <a href="https://www.facebook.com/congluc1902" rel="noreferrer" target="_blank">Luctc</a></p>
                         </div>
                         {/* Footer Column */}
                         <div className="tcl-col-12 tcl-col-sm-6 tcl-col-md-4 tcl-col-lg-2">
@@ -20,10 +20,10 @@ function Footer() {
                                 <p>Categories</p>
                             </div>
                             <ul className="footer-content__list">
-                                <li><a href="#">ReactJs</a></li>
-                                <li><a href="#">Javascript</a></li>
-                                <li><a href="#">Angular</a></li>
-                                <li><a href="#">HTML, HTML5</a></li>
+                                <li><a href="/">ReactJs</a></li>
+                                <li><a href="/">Javascript</a></li>
+                                <li><a href="/">Angular</a></li>
+                                <li><a href="/">HTML, HTML5</a></li>
                             </ul>
                         </div>
                         {/* Footer Column */}
@@ -57,3 +57,5 @@ function Footer() {
 
     );
 }
+
+export default Footer
