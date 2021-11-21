@@ -1,6 +1,8 @@
 import './latest-news-list.css'
 import ArticleItem from '../ArticleItem'
 import MainTitle from '../shared/MainTitle'
+import Button from '../shared/Button';
+
 
 function ArticleLatest() {
     return (
