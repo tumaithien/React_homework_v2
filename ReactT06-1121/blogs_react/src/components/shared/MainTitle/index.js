@@ -1,10 +1,21 @@
 import './main-title.css'
-
-function MainTitle() {
+import cls from 'classnames'
+import Button from '../Button'
+function MainTitle({
+    children,
+    btnLabel,
+    btnProps ={}
+}) {
+    const classes = cls('main-title spacing',{
+        'd-flex tcl-jc-between tcl-ais-center' : btnLabel
+    })
     return (
         <>
-            <div className="main-title spacing">
-                <h2>Latest Articles</h2>
+            <div className = { classes }>
+                <h2>{ children }</h2>
+                {
+                    btnLabel && <Button {...btnProps}>{ btnLabel }</Button>
+                }
             </div>
         </>
     );
