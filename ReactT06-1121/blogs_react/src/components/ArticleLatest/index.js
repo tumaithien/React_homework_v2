@@ -1,23 +1,22 @@
 import './latest-news-list.css'
 import ArticleItem from '../ArticleItem'
 import MainTitle from '../shared/MainTitle'
-import Button from '../shared/Button';
 
 
 function ArticleLatest() {
     return (
         <div className="latest-news section">
             <div className="tcl-container">
-                <MainTitle />
+                <MainTitle>Latest News</MainTitle>
                 <div className="latest-news__list spacing">
                     <div className="latest-news__card">
-                        <ArticleItem />
+                        <ArticleItem isShowAvatar children="Bài viết nổi bật" />
                     </div>
                     <div className="latest-news__card">
-                        <ArticleItem />
+                        <ArticleItem isShowAvatar children="Bài viết nổi bật" />
                     </div>
                     <div className="latest-news__card">
-                        <ArticleItem />
+                        <ArticleItem isShowAvatar children="Bài viết nổi bật" />
                     </div>
                 </div>
             </div>
