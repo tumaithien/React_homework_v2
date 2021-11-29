@@ -1,7 +1,5 @@
 //Action bao gồm: Action Type, Action Creator
-
-const ACT_ADD_INCOME = 'ACT_ADD_INCOME'
-
+import { ACT_ADD_INCOME } from './actionType'
 
 export function actAddIncome(){
     return{

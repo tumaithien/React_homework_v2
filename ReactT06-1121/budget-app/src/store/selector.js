@@ -1,0 +1,1 @@
+export const selectListIcomes = state => state.ListDataIncome

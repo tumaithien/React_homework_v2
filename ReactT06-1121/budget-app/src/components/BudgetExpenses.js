@@ -8,7 +8,7 @@ function BudgetExpenses({ListData}) {
                 <h2 className="expenses__title">Expenses</h2>
                 <div className="expenses__list">
                     {
-                        ListData.map(itemData => <Items data={itemData}/>)
+                        ListData.map(itemData => <Items key={itemData.id} data={itemData}/>)
                     }
                 </div>
             </div>
