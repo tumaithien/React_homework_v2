@@ -4,8 +4,8 @@ const initState = {
     ListDataIncome: [
         {
             id: uuidv4(),
-            description: 'Chi tien an sang ngay 08/01/2021',
-            amount: -18000
+            description: 'Chi tiền ăn sáng tháng 01/2021',
+            amount: -1800000
         },
         {
             id: uuidv4(),
@@ -14,13 +14,18 @@ const initState = {
         },
         {
             id: uuidv4(),
-            description: 'Tien nuoc uong ngay 08/01/2021',
-            amount: -20000
+            description: 'Chi tiền nước uống tháng 01/2021',
+            amount: -200000
         },
         {
             id: uuidv4(),
             description: 'Thu nhập bên ngoài 08/01/2021',
             amount: 50000
+        },
+        {
+            id: uuidv4(),
+            description: 'Tiền thưởng dự án ngoài chưa lấy',
+            amount: 1000000
         }
     ]
 }

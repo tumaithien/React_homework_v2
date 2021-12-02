@@ -1,14 +1,19 @@
+import { formatPercentAmount, formatStringAmount } from "../store/helper"
 
 
-function TotalExpenses() {
-
+function TotalExpenses({ totalList, total, totalIncomes }) {
     return (
         <>
             <div className="budget__expenses clearfix">
                 <div className="budget__expenses--text">Expenses</div>
                 <div className="right clearfix">
-                    <div className="budget__expenses--value">- 1,954.36</div>
-                    <div className="budget__expenses--percentage">45%</div>
+                    <div className="budget__expenses--value">{formatStringAmount(total)}</div>
+                    {
+                        total < 0 && 
+                        <div className="budget__expenses--percentage">
+                            {formatPercentAmount(total, totalIncomes)}
+                        </div>
+                    }
                 </div>
             </div>
         </>
