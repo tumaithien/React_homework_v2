@@ -1,21 +1,41 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import DemoButton from './demo/DemoButton'
-import DemoMainTitle from './demo/DemoMainTitle'
-import DemoInput from './demo/DemoInput'
+import Login from './pages/LoginPage'
+import Register from './pages/Register'
+import Search from './pages/Search'
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+
 
 function App() {
   return (
-    <div className="wrapper-content">
-      <Header />
-      <DemoMainTitle />
-      <DemoButton />
-      <DemoInput />
-      <HomePage />
-      <div className ="spacing" />
-      <Footer />
-    </div>
+    <Router>
+      <div className="wrapper-content">
+        <Header />
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+        <div className="spacing" />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

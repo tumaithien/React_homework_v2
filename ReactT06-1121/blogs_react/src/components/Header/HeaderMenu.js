@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
+
 function HeaderMenu() {
     return (
         <div className="tcl-col-6">
             {/* Nav */}
             <div className="header-nav">
                 <ul className="header-nav__lists">
-                    <li><a href="/">Home</a></li>
+                    <li><Link to="/">Home</Link></li>
                     <li>
                         <a href="/">Our Team</a>
                         <ul>
@@ -30,7 +32,7 @@ function HeaderMenu() {
                     </li>
                 </ul>
                 <ul className="header-nav__lists">
-                    <li className="user"><a href="login.html"><i className="icons ion-person" /> Tài khoản</a></li>
+                    <li className="user"><Link to="/login"><i className="icons ion-person" /> Tài khoản</Link></li>
                 </ul>
             </div>
         </div>

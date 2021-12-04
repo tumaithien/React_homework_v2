@@ -4,9 +4,11 @@ import Button from '../Button'
 function MainTitle({
     children,
     btnLabel,
+    type="",
     btnProps ={}
 }) {
     const classes = cls('main-title spacing',{
+        'main-title__search': type === 'search',
         'd-flex tcl-jc-between tcl-ais-center' : btnLabel
     })
     return (
