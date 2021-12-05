@@ -10,10 +10,14 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { BASE_URL } from './constants'
 
 
 
 function App() {
+
+  
+
   return (
     <Router>
       <div className="wrapper-content">
