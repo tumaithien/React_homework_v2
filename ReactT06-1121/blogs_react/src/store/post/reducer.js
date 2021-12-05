@@ -1,4 +1,5 @@
-import { ACT_GET_LIST_POSTS } from "./action"
+import { ACT_GET_ARTICLE_LASTEST } from "./actions"
+
 
 
 const initState = {
@@ -8,7 +9,7 @@ const initState = {
 
 function reducer(postState = initState, action) {
   switch (action.type) {
-    case ACT_GET_LIST_POSTS:
+    case ACT_GET_ARTICLE_LASTEST:
       return {
         articlesLatest: action.payload.posts
       }

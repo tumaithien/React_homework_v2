@@ -2,14 +2,20 @@ import '../components/ArticlePopular/popular-news-list.css'
 import MainTitle from '../components/shared/MainTitle'
 import ArticleItem from '../components/ArticleItem'
 import Button from '../components/shared/Button'
-
+import { getQueryStr } from '../helpers'
+import { useLocation } from 'react-router-dom'
 function Search() {
+    const location = useLocation();
+    let locationStr = location.search;
+    console.log(locationStr)
+    locationStr = getQueryStr('q');
+
     return (
         <div>
             <div className="articles-list section">
                 <div className="tcl-container">
                     {/* Main Title */}
-                    <MainTitle type="search">10 kết quả tìm kiếm cho từ khóa ""</MainTitle>
+                    <MainTitle type="search">10 kết quả tìm kiếm cho từ khóa "{locationStr}"</MainTitle>
                     {/* End Main Title */}
                     {/* End Row News List */}
                     <div className="tcl-row tcl-jc-center">
