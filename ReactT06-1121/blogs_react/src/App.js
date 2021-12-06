@@ -5,7 +5,7 @@ import Login from './pages/LoginPage'
 import Register from './pages/Register'
 import Search from './pages/Search'
 import React from 'react'
-import PostDetails from './pages/PostDetailsPage'
+import PostDetailsPage from './pages/PostDetailsPage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,7 +31,7 @@ function App() {
             <Search />
           </Route>
           <Route path="/post-details">
-            <PostDetails />
+            <PostDetailsPage />
           </Route>
           <Route path="/">
             <HomePage />

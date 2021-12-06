@@ -7,7 +7,6 @@ import { useLocation } from 'react-router-dom'
 function Search() {
     const location = useLocation();
     let locationStr = location.search;
-    console.log(locationStr)
     locationStr = getQueryStr('q');
 
     return (
