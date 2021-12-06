@@ -1,8 +1,10 @@
 import PostDetailSlidebar from "../components/PostDetail/PostDetailSlidebar"
 import PostDetailContent from "../components/PostDetail/PostDetailContent"
 import PostDetailHeader from "../components/PostDetail/PostDetailHeader"
+import { useParams } from "react-router"
 function PostDetailsPage() {
-
+    const params = useParams();
+    console.log('params', params)
     return (
         <>
             <main className="post-detail">

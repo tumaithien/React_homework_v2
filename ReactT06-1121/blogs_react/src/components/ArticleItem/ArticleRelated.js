@@ -1,6 +1,6 @@
 import './related-posts.css'
 
-function PostDetailRelated() {
+function ArticleRelated() {
     return (
         <>
             {/* Post Detail Tags */}
@@ -18,4 +18,4 @@ function PostDetailRelated() {
     )
 }
 
-export default PostDetailRelated
+export default ArticleRelated

@@ -15,7 +15,7 @@ function ArticleItem(
         isShowCategories = false,
         isShowStar = false,
         isShowAvatar = false,
-        children
+        post,
     }
 ) {
 
@@ -23,17 +23,32 @@ function ArticleItem(
         'style-card': isStyleCard,
         'style-row': isStyleRow
     })
+    // const title = post.title;
+
+
+    if(!post){
+        return null
+    }
+    const { slug, title, author, createDate, thumb, author_id } = post
+
+    const slugLink = '/post/' + slug
+    const slugAuthor = '/user/' + author_id
 
     return (
         <>
             <article className={classes}>
-                <ArticleItemThumb/>
+                <ArticleItemThumb authorName={author.nickname} thumb={thumb} slugLink={slugLink} title={title}  />
                 <div className="article-item__content">
                     {isShowCategories && <ArticleItemCategories />}
                     {isShowStar && <ArticleItemStar />}
-                        <ArticleItemTitle children={children} />
+                        <ArticleItemTitle children={title} slugLink={slugLink} />
                     {isShowDecs && <ArticleItemDesc />}
-                    <ArticleItemInfo isShowAvatar={isShowAvatar}/>
+                    <ArticleItemInfo 
+                    createDate={createDate} 
+                    author={author} 
+                    isShowAvatar
+                    authorLink={slugAuthor}
+                    />
                 </div>
             </article>
         </>

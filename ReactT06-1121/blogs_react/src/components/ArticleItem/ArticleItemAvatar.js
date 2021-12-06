@@ -1,8 +1,16 @@
 import './article-item.css'
 import cls from 'classnames'
+import { Link } from 'react-router-dom'
+import { DEFAULT_AVATAR } from '../../constants'
+
 
 function ArticleItemAvatar(
-    className
+    {
+        className,
+        avatar,
+        linkAuthor,
+        nickname
+    }
 ){
 
     const classes = cls('article-item__author-image',className)
@@ -10,9 +18,9 @@ function ArticleItemAvatar(
     return(
         <>
             <div className={ classes }>
-                <a aria-label="John Doe" href="/">
-                    <img src="/assets/images/john-doe.png" alt="john-doe" />
-                </a>
+                <Link aria-label={nickname} to={linkAuthor}>
+                    <img src={avatar || DEFAULT_AVATAR} alt={nickname} />
+                </Link>
             </div>
         </>
     )

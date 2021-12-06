@@ -1,12 +1,16 @@
 import './article-item.css'
-
-function ArticleItemThumb(){
+import { Link } from 'react-router-dom'
+function ArticleItemThumb({
+    slugLink,
+    thumb,
+    title
+}){
     return(
         <>
             <div className="article-item__thumbnail">
-                <a href="/">
-                    <img src="/assets/images/blog-1.jpg" alt="assets/images/blog-1.jpg" />
-                </a>
+                <Link to={slugLink}>
+                    <img src={thumb} alt={title} />
+                </Link>
             </div>
         </>
     )

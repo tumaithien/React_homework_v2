@@ -8,7 +8,7 @@ function PostDetailSlidebar() {
                 <div className="post-author">
                     <div className="post-author__bg-avatar">
                         <a href="#" className="post-author__avatar">
-                            <img src="./assets/images/blog-detail.jpg" alt="" />
+                            <img src="/assets/images/blog-detail.jpg" alt="" />
                         </a>
                     </div>
                     <div className="post-author__nickname">

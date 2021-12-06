@@ -1,10 +1,12 @@
 import './article-item.css'
 import cls from 'classnames'
+import { Link } from 'react-router-dom'
 
 function ArticleItemTitle(
     {
         children,
         className,
+        slugLink,
         ...restProps
     }
 ){
@@ -13,7 +15,7 @@ function ArticleItemTitle(
     return(
         <>
             <h2 className={classes}>
-                <a href="/only-someone-who's-seen-the-mummy-will-pass-this/">{children}</a>
+                <Link to={slugLink}>{children}</Link>
             </h2>
         </>
     )

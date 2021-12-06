@@ -12,9 +12,6 @@ import {
   Route
 } from "react-router-dom";
 
-
-
-
 function App() {
   return (
     <Router>
@@ -30,7 +27,7 @@ function App() {
           <Route path="/search">
             <Search />
           </Route>
-          <Route path="/post-details">
+          <Route path="/post/:slug">
             <PostDetailsPage />
           </Route>
           <Route path="/">

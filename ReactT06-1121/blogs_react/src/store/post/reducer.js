@@ -11,6 +11,7 @@ function reducer(postState = initState, action) {
   switch (action.type) {
     case ACT_GET_ARTICLE_LASTEST:
       return {
+        ...postState,
         articlesLatest: action.payload.posts
       }
     default:
