@@ -12,7 +12,7 @@ export function formatStringAmount(amount){
 
     amountFormated = new Intl.NumberFormat('vi-VN', amountConfig).format(amountFormated)
     
-    amountFormated = amountFormated.substring(0, amountFormated.length - 2)
+    // amountFormated = amountFormated.substring(0, amountFormated.length - 2)
 
 
     return `${sign} ${amountFormated}`;
@@ -39,4 +39,11 @@ export function formatPercentAmount(amount, total){
     }
 
     return percentAmount + '%';
+}
+
+export function calTotalMonth(totalIncomes, totalExpenses){
+    let total = totalIncomes - (-totalExpenses);
+    total = formatStringAmount(total)
+    return total
+
 }

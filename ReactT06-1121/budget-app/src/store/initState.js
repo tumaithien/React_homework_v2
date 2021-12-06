@@ -26,6 +26,11 @@ const initState = {
             id: uuidv4(),
             description: 'Tiền thưởng dự án ngoài chưa lấy',
             amount: 1000000
+        },
+        {
+            id: uuidv4(),
+            description: 'Tiền đi chơi',
+            amount: -1000000
         }
     ]
 }

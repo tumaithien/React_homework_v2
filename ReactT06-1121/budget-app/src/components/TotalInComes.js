@@ -1,7 +1,7 @@
 import { formatStringAmount } from "../store/helper"
 
 
-function TotalInComes({ total, totalList }) {
+function TotalInComes({ total }) {
     
     return (
         <>

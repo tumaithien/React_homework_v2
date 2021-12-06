@@ -1,10 +1,13 @@
+import { calTotalMonth } from "../store/helper"
 
 
-
-function TotalAmount(){
+function TotalAmount({
+    totalIncomes,
+    totalExpenses
+}){
     return(
         <>
-            <div className="budget__value">+ 2,345.64</div>
+            <div className="budget__value">{ calTotalMonth(totalIncomes, totalExpenses) }</div>
         </>
     )
 }

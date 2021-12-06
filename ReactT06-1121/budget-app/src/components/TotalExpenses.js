@@ -1,7 +1,7 @@
 import { formatPercentAmount, formatStringAmount } from "../store/helper"
 
 
-function TotalExpenses({ totalList, total, totalIncomes }) {
+function TotalExpenses({ total, totalIncomes }) {
     return (
         <>
             <div className="budget__expenses clearfix">
