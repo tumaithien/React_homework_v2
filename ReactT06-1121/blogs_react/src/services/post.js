@@ -15,6 +15,20 @@ const postServices ={
             per_page: 3,
             page: 1
         })
+    },
+
+    getArticleGeneral(){
+        return postServices.getList({
+            per_page: 5,
+            page: 1
+        })
+    },
+    getArticlePopular(){
+        return postServices.getList({
+            per_page: 3,
+            page: 1,
+            orderby: 'post_views'
+        })
     }
 }
 

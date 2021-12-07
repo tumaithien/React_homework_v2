@@ -14,8 +14,8 @@ function ArticleItem(
         isShowDecs = false,
         isShowCategories = false,
         isShowStar = false,
-        isShowAvatar = false,
         post,
+        isShowAvatar=false,
     }
 ) {
 
@@ -44,10 +44,10 @@ function ArticleItem(
                         <ArticleItemTitle children={title} slugLink={slugLink} />
                     {isShowDecs && <ArticleItemDesc />}
                     <ArticleItemInfo 
-                    createDate={createDate} 
-                    author={author} 
-                    isShowAvatar
-                    authorLink={slugAuthor}
+                        createDate={createDate} 
+                        author={author} 
+                        authorLink={slugAuthor}
+                        isShowAvatar ={isShowAvatar}
                     />
                 </div>
             </article>

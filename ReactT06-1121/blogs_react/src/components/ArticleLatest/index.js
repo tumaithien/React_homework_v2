@@ -19,7 +19,7 @@ function ArticleLatest() {
                                 <div className="latest-news__card" key={dataItem.id}>
                                     <ArticleItem 
                                         post={dataItem}
-                                        isShowAvatar="true"
+                                        isShowAvatar={true}
                                     />
                                 </div>
                             )

@@ -10,6 +10,8 @@ export function mappingPostData(list) {
         thumb: list.featured_media_url,
         slug: list.slug,
         createDate: list.date,
-        author_id: list.author
+        authorId: list.author,
+        categoriesId: list.categories,
+        viewCount: list.view_count
     }
 }

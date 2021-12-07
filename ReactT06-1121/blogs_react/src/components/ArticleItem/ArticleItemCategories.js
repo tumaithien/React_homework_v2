@@ -5,7 +5,7 @@ import Button from '../shared/Button'
 function ArticleItemCategories(
     {
         className,
-        btnLabel = "Xem thêm",
+        btnLabel = "News",
         btnProps = {
             type: 'category',
             as: 'a',

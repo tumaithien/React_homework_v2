@@ -3,16 +3,17 @@ import ArticleLatest from "../components/ArticleLatest";
 import ArticlePopular from "../components/ArticlePopular";
 import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
-import { actAsyncGetArticleLastest } from "../store/post/actions";
+import { actAsyncGetArticleGeneral, actAsyncGetArticleLastest, actAsyncGetArticlePopular } from "../store/post/actions";
 
 function HomePage() {
 
   const dispatch =useDispatch();
-
   useEffect(() =>{
     dispatch(actAsyncGetArticleLastest())
+    dispatch(actAsyncGetArticleGeneral())
+    dispatch(actAsyncGetArticlePopular())
   }, [dispatch])
- 
+  
 
   return (
     <>

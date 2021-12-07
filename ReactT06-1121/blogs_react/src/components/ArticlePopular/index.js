@@ -1,8 +1,12 @@
 import MainTitle from "../shared/MainTitle"
 import './popular-news-list.css'
 import ArticleItem from '../ArticleItem'
+import { useSelector } from "react-redux"
 
 function ArticlePopular() {
+    const selectorPostPopular = useSelector(state => state.Post.articlesPopular)
+    console.log(selectorPostPopular)
+
     return (
         <>
             {/* Popular News Section */}
@@ -16,12 +20,12 @@ function ArticlePopular() {
                             <div className="popular-news__list--row">
                                 {/* Popular news card */}
                                 <div className="popular-news__list--card">
-                                    <ArticleItem isStyleCard children="Bài viết mới nhất trong tuần ngày 27/11/2021" isShowCategories isShowStar isShowDecs isShowAvatar />
+                                    <ArticleItem isStyleCard isShowCategories post={selectorPostPopular[0]} />
                                 </div>
                                 {/* End Popular news card */}
                                 {/* Popular news card */}
                                 <div className="popular-news__list--card">
-                                    <ArticleItem isStyleCard children="Bài viết mới nhất trong tuần ngày 27/11/2021" isShowCategories isShowStar isShowDecs isShowAvatar />
+                                    <ArticleItem isStyleCard isShowCategories post={selectorPostPopular[1]} />
                                 </div>
                                 {/* End Popular news card */}
                             </div>
@@ -30,7 +34,7 @@ function ArticlePopular() {
                             <div className="popular-news__list--row">
                                 {/* Popular news card */}
                                 <div className="popular-news__list--card">
-                                <ArticleItem isStyleCard isStyleRow children="Bài viết mới nhất trong tuần ngày 27/11/2021" isShowCategories isShowStar isShowAvatar />
+                                <ArticleItem isStyleCard isStyleRow isShowCategories post={selectorPostPopular[2]} />
                                 </div>
                                 {/* End Popular news card */}
                             </div>
