@@ -11,8 +11,18 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { actAsyncAllCategory } from './store/category/action'
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(actAsyncAllCategory())
+  }, [dispatch])
+
   return (
     <Router>
       <div className="wrapper-content">

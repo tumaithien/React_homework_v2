@@ -15,3 +15,23 @@ export function mappingPostData(list) {
         viewCount: list.view_count
     }
 }
+
+export function handleHashCategory(categories) {
+    const hashObj = {}
+
+    categories.forEach(categoryItem => {
+        const key = categoryItem.id
+        hashObj[key] = categoryItem
+
+        hashObj[key]={
+            id: categoryItem.id,
+            slug: categoryItem.slug,
+            name: categoryItem.name
+        }
+    })
+    
+
+    return hashObj
+
+
+}

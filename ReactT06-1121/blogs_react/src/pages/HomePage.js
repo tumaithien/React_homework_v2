@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import { actAsyncGetArticleGeneral, actAsyncGetArticleLastest, actAsyncGetArticlePopular } from "../store/post/actions";
 
+
 function HomePage() {
 
   const dispatch =useDispatch();
